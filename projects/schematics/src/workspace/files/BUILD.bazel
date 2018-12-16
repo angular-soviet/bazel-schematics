@@ -1,0 +1,7 @@
+package(default_visibility = ["//visibility:public"])
+exports_files(["tsconfig.json"])
+
+filegroup(
+    name = "node_modules",
+    srcs = glob(["node_modules/**"]),
+)

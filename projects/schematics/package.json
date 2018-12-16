@@ -1,0 +1,28 @@
+{
+  "name": "bazel-schematics",
+  "version": "0.0.0",
+  "description": "A bazel-schematics schematics",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && jasmine src/**/*_spec.js"
+  },
+  "keywords": [
+    "bazel",
+    "bazel-schematics",
+    "schematics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "peerDependencies": {
+    "@angular-devkit/core": "^7.1.2",
+    "@angular-devkit/schematics": "^7.1.2",
+    "@types/jasmine": "^2.6.0",
+    "@types/node": "^8.0.31",
+    "@types/underscore": "^1.8.9",
+    "jasmine": "^2.8.0",
+    "schematics-utilities": "^1.1.1",
+    "typescript": "~3.1.6",
+    "underscore": "^1.9.1"
+  }
+}

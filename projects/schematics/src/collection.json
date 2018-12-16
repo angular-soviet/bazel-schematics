@@ -1,0 +1,17 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "bazel": {
+      "description": "A bazel schematic.",
+      "factory": "./bazel/index#bazel"
+    },
+    "workspace": {
+      "description": "Create bazel workspace.",
+      "factory": "./workspace/index#workspace"
+    },
+    "project": {
+      "description": "Generate bazel build.",
+      "factory": "./project/index#project"
+    }
+  }
+}

@@ -1,27 +1,70 @@
-# BlyazelApp
+# Bazel Schematics
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
+## Development
 
-## Development server
+### Install bazel
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+brew install bazel
+```
 
-## Code scaffolding
+### Install dependencies
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> Note: will working with yarn only yet!
+```bash
+yarn install
+```
 
-## Build
+And before the first start you must perform
+```bash
+yarn run prerun
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Start development
 
-## Running unit tests
+Start all you need to develop with watch changes.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Schematics Compiler
+* Schematics Runner
+* Bazel Runner
 
-## Running end-to-end tests
+```bash
+yarn start
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Articles
 
-## Further help
+### Angular Schematics
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### Create schematics
+https://medium.com/@jorgeucano/your-fist-angular-schematics-f711d70cb37c
+
+#### Angular devkit schematics
+https://github.com/angular/angular-cli/tree/master/packages/angular_devkit/schematics
+
+#### Schematics utilities
+https://nitayneeman.github.io/schematics-utilities
+
+#### Configuring Schematics
+https://medium.com/rocket-fuel/angular-schematics-simple-schematic-76be2aa72850
+
+### Bazel
+
+#### TypeScript Rules for Bazel
+https://www.youtube.com/watch?v=Qb3tykleV_g
+https://github.com/bazelbuild/rules_typescript
+https://github.com/alexeagle/angular-bazel-example/wiki/TypeScript-rules
+
+#### Bazel and package.json dependencies
+https://github.com/bazelbuild/rules_nodejs
+
+#### Angular with Bazel example
+https://github.com/alexeagle/angular-bazel-example/tree/cli
+
+### TypeScript
+
+#### Using TypeScript Compiler API
+https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API
+
+#### TypeScript parser
+https://babeljs.io/docs/en/babel-parser
