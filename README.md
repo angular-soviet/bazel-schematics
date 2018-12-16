@@ -1,6 +1,6 @@
 # Bazel Schematics
 
-## Development
+## Set up
 
 ### Install bazel
 
@@ -10,19 +10,21 @@ brew install bazel
 
 ### Install dependencies
 
-> Note: will working with yarn only yet!
+> Note: currently only works with yarn.
+
 ```bash
 yarn install
 ```
 
-And before the first start you must perform
+Execute this before the first run.
+
 ```bash
 yarn run prerun
 ```
 
-### Start development
+### Running the dev server
 
-Start all you need to develop with watch changes.
+This single command starts the following components and watches for changes:
 
 * Schematics Compiler
 * Schematics Runner
@@ -32,7 +34,7 @@ Start all you need to develop with watch changes.
 yarn start
 ```
 
-## Articles
+## Useful links
 
 ### Angular Schematics
 
